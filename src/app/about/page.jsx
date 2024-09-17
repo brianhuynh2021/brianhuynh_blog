@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css"
+import Button from "components/Button"
+
 const About = () => {
     return (
         <div className={styles.container}>
@@ -9,7 +11,7 @@ const About = () => {
                     src="https://images.pexels.com/photos/28345127/pexels-photo-28345127/free-photo-of-a-table-with-a-menu-on-it-in-a-restaurant.jpeg" 
                     fill={true} 
                     alt="About image cover"
-										className={styles.img}
+					className={styles.img}
                 />
             </div>
             <div className={styles.textImage}>
@@ -53,6 +55,7 @@ const About = () => {
 									officiis voluptatum quo ea eveniet?
 								</p>
 							</div>
+							<Button>
 						</div>
         </div>
     );

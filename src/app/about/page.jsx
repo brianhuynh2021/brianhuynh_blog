@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./page.module.css"
-import Button from "components/Button"
+import Button from "../components/Button/Button"
 
 const About = () => {
     return (
@@ -55,7 +55,7 @@ const About = () => {
 									officiis voluptatum quo ea eveniet?
 								</p>
 							</div>
-							<Button>
+							<Button text="Contact" url="/contact"/>
 						</div>
         </div>
     );

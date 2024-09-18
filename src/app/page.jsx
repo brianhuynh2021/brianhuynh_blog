@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.item}>
         <h1 className={styles.title}>Better design for digital products.</h1>
         <p className={styles.desc}>Turning your Idea into Reality. We bring together the teams from global tech industry.</p>
-        <Button text="See Our Works" url="/porfolio"/>
+        <Button text="See Our Works" url="/portfolio"/>
       </div>
       <div className={styles.item}>
         <Image src={Hero} alt="home page" className={styles.img}/>

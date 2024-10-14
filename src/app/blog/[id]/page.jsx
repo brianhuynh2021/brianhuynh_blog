@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.css"
 import Image from "next/image"
+import { notFound } from 'next/navigation';
 
 async function getData(id) {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
@@ -8,7 +9,7 @@ async function getData(id) {
     })
 
     if (!res.ok) {
-        return notFound
+        return notFound()
     }
 
     return res.json()
